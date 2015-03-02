@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		000947F51AA4AA0B00C4358A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 000947F41AA4AA0B00C4358A /* Default-568h@2x.png */; };
 		00B85B2D1AA47092001E5EB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B85B2C1AA47092001E5EB9 /* AppDelegate.swift */; };
 		00B85B2F1AA47092001E5EB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B85B2E1AA47092001E5EB9 /* ViewController.swift */; };
 		00B85B321AA47092001E5EB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B85B301AA47092001E5EB9 /* Main.storyboard */; };
@@ -27,7 +26,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		000947F41AA4AA0B00C4358A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		00B85B271AA47092001E5EB9 /* webViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = webViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00B85B2B1AA47092001E5EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00B85B2C1AA47092001E5EB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +59,6 @@
 		00B85B1E1AA47092001E5EB9 = {
 			isa = PBXGroup;
 			children = (
-				000947F41AA4AA0B00C4358A /* Default-568h@2x.png */,
 				00B85B291AA47092001E5EB9 /* webViewer */,
 				00B85B3F1AA47092001E5EB9 /* webViewerTests */,
 				00B85B281AA47092001E5EB9 /* Products */,
@@ -196,7 +193,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				00B85B321AA47092001E5EB9 /* Main.storyboard in Resources */,
-				000947F51AA4AA0B00C4358A /* Default-568h@2x.png in Resources */,
 				00B85B371AA47092001E5EB9 /* LaunchScreen.xib in Resources */,
 				00B85B341AA47092001E5EB9 /* Images.xcassets in Resources */,
 			);
@@ -411,7 +407,6 @@
 				00B85B481AA47092001E5EB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		00B85B491AA47092001E5EB9 /* Build configuration list for PBXNativeTarget "webViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -420,7 +415,6 @@
 				00B85B4B1AA47092001E5EB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
