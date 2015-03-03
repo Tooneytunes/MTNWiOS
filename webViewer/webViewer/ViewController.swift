@@ -8,11 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var inputBar: UITextField!
     
-    @IBOutlet weak var uiWebView: UIWebView!
+    @IBOutlet weak var uiWebView: UIWebView?
+    
+    @IBOutlet weak var loadIndicator: UIActivityIndicatorView!
     
     @IBAction func urlButtonPressed(sender: UIButton) {
         //Checking if the string starts with HTTP
@@ -23,10 +25,26 @@ class ViewController: UIViewController {
             //Converting the string to an URL and URLRequest
             var url = NSURL(string: correctedUrl!)
             var req = NSURLRequest(URL: url!)
-            uiWebView.loadRequest(req)
+            //Adjusting the webpage
+            uiWebView!.scalesPageToFit = true
+            //Loading the URL
+            uiWebView?.delegate = self
+            uiWebView!.loadRequest(req)
         }
     }
     
+    //activating the load indicator.
+    func webViewDidStartLoad(uiWebView: UIWebView)
+    {
+        println("startLoading")
+        loadIndicator.startAnimating()
+    }
+    func webViewDidFinishLoad(uiWebView: UIWebView) {
+        println("finishedLoading")
+        loadIndicator.stopAnimating()
+    }
+    
+    //Checking for corrected URL
     func checkForCorrectURL (inputText :String)->String?
     {
         var urlString : String = inputText

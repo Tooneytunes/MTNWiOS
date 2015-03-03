@@ -407,6 +407,7 @@
 				00B85B481AA47092001E5EB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00B85B491AA47092001E5EB9 /* Build configuration list for PBXNativeTarget "webViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +416,7 @@
 				00B85B4B1AA47092001E5EB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
