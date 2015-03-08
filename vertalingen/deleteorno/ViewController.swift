@@ -47,6 +47,8 @@ class ViewController: UIViewController {
     @IBAction func clickButton(sender: UIButton) {
         
         label.text = NSLocalizedString("GOOD_MORNING", comment: "goedemorgen")
+        
+        ///n goedemorgen in variabel plaatsen
     }
 
 }
