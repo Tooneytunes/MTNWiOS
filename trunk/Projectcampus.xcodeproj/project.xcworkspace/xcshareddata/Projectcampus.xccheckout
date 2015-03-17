@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>38232E42-3DD9-4A04-9408-1C75F0683E4B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Projectcampus</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>76C9A01E528E0981DEA660CD0E11F3ACC32C4998</key>
+		<string>https://bitbucket.org/projectcampus/ios-app.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>trunk/Projectcampus.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>76C9A01E528E0981DEA660CD0E11F3ACC32C4998</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/projectcampus/ios-app.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>76C9A01E528E0981DEA660CD0E11F3ACC32C4998</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>76C9A01E528E0981DEA660CD0E11F3ACC32C4998</string>
+			<key>IDESourceControlWCCName</key>
+			<string>projectcampus</string>
+		</dict>
+	</array>
+</dict>
+</plist>
