@@ -28,6 +28,6 @@ class MainMenuController : UIViewController {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
     }
-    
+    //test commit
 }
 
