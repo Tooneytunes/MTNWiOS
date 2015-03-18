@@ -10,7 +10,7 @@ import UIKit
 
 class SidebarNotificationViewController : UITableViewController {
     
-    let notificationsList : [String] = ["Notificatie 1", "Notificatie 4", "Notificatie test"]
+    let notificationsList : [String] = ["Notificatie 1", "Notificatie 4", "Notificatie voorbeeld", "Notificatie 1", "Notificatie 4", "Notificatie 1", "Notificatie 4"]
      let CELL_TYPE_ID = "NOTIF"
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -20,9 +20,7 @@ class SidebarNotificationViewController : UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier(CELL_TYPE_ID) as? UITableViewCell
         
-        if (cell == nil) {
-            println ("Nieuwe cell aangemaakt bij \(indexPath.row)")
-            
+        if (cell == nil) {            
             cell = UITableViewCell(style: UITableViewCellStyle.Value2, reuseIdentifier: CELL_TYPE_ID)
         }
         
