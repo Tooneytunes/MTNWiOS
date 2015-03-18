@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07F8B1151AB9B81300AC5995 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F8B1141AB9B81300AC5995 /* SWRevealViewController.m */; };
 		5A4ADBF91AAEEBDC0051DAE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4ADBF81AAEEBDC0051DAE6 /* AppDelegate.swift */; };
 		5A4ADBFE1AAEEBDC0051DAE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A4ADBFC1AAEEBDC0051DAE6 /* Main.storyboard */; };
 		5A4ADC001AAEEBDC0051DAE6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A4ADBFF1AAEEBDC0051DAE6 /* Images.xcassets */; };
 		5A4ADC031AAEEBDC0051DAE6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A4ADC011AAEEBDC0051DAE6 /* LaunchScreen.xib */; };
 		5A4ADC0F1AAEEBDC0051DAE6 /* ProjectcampusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4ADC0E1AAEEBDC0051DAE6 /* ProjectcampusTests.swift */; };
 		5A8F9BAC1AB8A0EF0040AD85 /* MainMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F9BAB1AB8A0EF0040AD85 /* MainMenuController.swift */; };
-		5A8F9BB11AB8A1320040AD85 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F9BB01AB8A1320040AD85 /* SWRevealViewController.m */; };
 		5A8F9BB31AB8A1C00040AD85 /* SidebarMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F9BB21AB8A1C00040AD85 /* SidebarMenuViewController.swift */; };
 		5A8F9BB51AB8A6670040AD85 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F9BB41AB8A6670040AD85 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07F8B1131AB9B81300AC5995 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
+		07F8B1141AB9B81300AC5995 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
 		5A4ADBF31AAEEBDC0051DAE6 /* Projectcampus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Projectcampus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A4ADBF71AAEEBDC0051DAE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A4ADBF81AAEEBDC0051DAE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,8 +42,6 @@
 		5A4ADC0E1AAEEBDC0051DAE6 /* ProjectcampusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectcampusTests.swift; sourceTree = "<group>"; };
 		5A8F9BAB1AB8A0EF0040AD85 /* MainMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuController.swift; sourceTree = "<group>"; };
 		5A8F9BAE1AB8A1310040AD85 /* Projectcampus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Projectcampus-Bridging-Header.h"; sourceTree = "<group>"; };
-		5A8F9BAF1AB8A1320040AD85 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../../Downloads/SWRevealViewController-master 4/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
-		5A8F9BB01AB8A1320040AD85 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../../Downloads/SWRevealViewController-master 4/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
 		5A8F9BB21AB8A1C00040AD85 /* SidebarMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarMenuViewController.swift; sourceTree = "<group>"; };
 		5A8F9BB41AB8A6670040AD85 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,8 +126,8 @@
 		5A8F9BAD1AB8A1240040AD85 /* SWRevealViewController */ = {
 			isa = PBXGroup;
 			children = (
-				5A8F9BAF1AB8A1320040AD85 /* SWRevealViewController.h */,
-				5A8F9BB01AB8A1320040AD85 /* SWRevealViewController.m */,
+				07F8B1131AB9B81300AC5995 /* SWRevealViewController.h */,
+				07F8B1141AB9B81300AC5995 /* SWRevealViewController.m */,
 				5A8F9BAE1AB8A1310040AD85 /* Projectcampus-Bridging-Header.h */,
 			);
 			name = SWRevealViewController;
@@ -235,9 +235,9 @@
 			files = (
 				5A8F9BB31AB8A1C00040AD85 /* SidebarMenuViewController.swift in Sources */,
 				5A4ADBF91AAEEBDC0051DAE6 /* AppDelegate.swift in Sources */,
+				07F8B1151AB9B81300AC5995 /* SWRevealViewController.m in Sources */,
 				5A8F9BAC1AB8A0EF0040AD85 /* MainMenuController.swift in Sources */,
 				5A8F9BB51AB8A6670040AD85 /* SettingsViewController.swift in Sources */,
-				5A8F9BB11AB8A1320040AD85 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
