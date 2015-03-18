@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOd-1Y-e9X">
-                                <rect key="frame" x="16" y="28" width="382" height="32"/>
+                                <rect key="frame" x="16" y="28" width="329" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -189,12 +189,24 @@
                                 <state key="normal" title="=">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="resultCalculation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z8C-LM-PjM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPS-Kf-EW1">
+                                <rect key="frame" x="352" y="29" width="30" height="30"/>
+                                <state key="normal" title="◀︎">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="removeLast:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dzo-Pn-lY3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="YOd-1Y-e9X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Jxp-SP-mwF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="YOd-1Y-e9X" secondAttribute="trailing" id="NPh-h3-1Pc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YOd-1Y-e9X" secondAttribute="trailing" constant="53" id="NPh-h3-1Pc"/>
                             <constraint firstItem="YOd-1Y-e9X" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Ygb-2o-Nyi"/>
                         </constraints>
                     </view>
