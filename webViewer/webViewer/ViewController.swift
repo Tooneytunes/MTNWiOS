@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var inputBar: UITextField!
@@ -17,6 +18,9 @@ class ViewController: UIViewController, UIWebViewDelegate {
     @IBOutlet weak var loadIndicator: UIActivityIndicatorView!
     
     @IBAction func urlButtonPressed(sender: UIButton) {
+        var test = "testing"
+        
+        
         //Checking if the string starts with HTTP
         let correctedUrl = checkForCorrectURL(inputBar.text!)
         
