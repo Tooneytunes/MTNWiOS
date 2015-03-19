@@ -22,5 +22,12 @@ class CampusDetailWebViewController : UIViewController, UIWebViewDelegate {
     
     override func viewDidLayoutSubviews() {
         detailView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)
-    }    
+    }
+    
+    func webViewDidFinishLoad(webView: UIWebView) {
+        detailView.stringByEvaluatingJavaScriptFromString("document.getElementById('search-bar').style.display = 'none'")
+        detailView.stringByEvaluatingJavaScriptFromString("document.getElementsByClassName('page-offset').style.paddingTop = '0'")
+    }
+    
+
 }

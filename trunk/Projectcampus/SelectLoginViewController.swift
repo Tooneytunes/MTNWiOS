@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  SelectLoginViewController.swift
 //  Projectcampus
 //
 //  Created by Jeroen Zonneveld on 19-03-15.
@@ -8,13 +8,9 @@
 
 import UIKit
 
-class LoginViewController : UIViewController {
-    
-    @IBOutlet weak var usernameField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
+class SelectLoginViewController : UIViewController {
     
     override func viewWillAppear(animated: Bool) {
-        passwordField.secureTextEntry = true
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
     }
 }
