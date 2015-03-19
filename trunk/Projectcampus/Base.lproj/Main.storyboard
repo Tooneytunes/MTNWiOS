@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="193" y="1449"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="EFX-Ax-lJc">
             <objects>
-                <viewController id="HdE-cl-QOP" sceneMemberID="viewController">
+                <viewController id="HdE-cl-QOP" customClass="LoginViewController" customModule="Projectcampus" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KMy-c7-XDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="RYL-bj-vfY"/>
@@ -116,6 +116,10 @@
                             <constraint firstItem="zJr-Yo-O9e" firstAttribute="centerX" secondItem="pOF-w4-At1" secondAttribute="centerX" id="j2B-U8-O5y"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordField" destination="h6E-ED-SKn" id="wxd-G1-Csz"/>
+                        <outlet property="usernameField" destination="pOF-w4-At1" id="S3X-ut-gNx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="doo-Nn-k84" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
