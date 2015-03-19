@@ -25,8 +25,9 @@ class CampusDetailWebViewController : UIViewController, UIWebViewDelegate {
     }
     
     func webViewDidFinishLoad(webView: UIWebView) {
-        detailView.stringByEvaluatingJavaScriptFromString("document.getElementById('search-bar').style.display = 'none'")
-        detailView.stringByEvaluatingJavaScriptFromString("document.getElementsByClassName('page-offset').style.paddingTop = '0'")
+       // webView.stringByEvaluatingJavaScriptFromString("document.getElementById('search-bar').style.display = 'none'")
+        //webView.stringByEvaluatingJavaScriptFromString("document.getElementsByClassName('page-offset').style.paddingTop = '0'")
+       // println("BAN")
     }
     
 
