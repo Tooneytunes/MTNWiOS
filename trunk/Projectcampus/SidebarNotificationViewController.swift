@@ -10,7 +10,7 @@ import UIKit
 
 class SidebarNotificationViewController : UITableViewController {
     
-    let notificationsList : [String] = ["Notificatie 1", "Notificatie 4", "Notificatie voorbeeld", "Notificatie 1", "Notificatie 4", "Notificatie 1", "Notificatie 4"]
+    let notificationsList : [String] = ["Notificatie 1", "Notificatie 4", "Notificatie 1", "Notificatie 4", "Notificatie 1", "Notificatie 4"]
      let CELL_TYPE_ID = "NOTIF"
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
