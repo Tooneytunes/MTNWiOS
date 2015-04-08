@@ -21,38 +21,32 @@ class ViewController: UIViewController {
         "token_url": ""
     ]
     
+    @IBAction func startConnectionWithProjectcampus(sender: UIButton) {
+       //println(config)
+        self.doOAuthProjectCampus()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //self.doOAuthSalesforce()
-        
-
-        
-        
         Alamofire.request(.GET, "https://api-test.projectcamp.us/config")
             .responseJSON { (_, _, configInJSON, _) in
-                println(configInJSON)
+                //println(configInJSON)
                 
-                
-               let json = JSON(configInJSON!)
-                     println(json)
+                let json = JSON(configInJSON!)
+                //    println(json)
                 
                 self.config["authorization_url"] = json["oauth"]["authorization_url"].stringValue
                 self.config["client_id"] = json["oauth"]["client_id"].stringValue
                 self.config["client_secret"] = json["oauth"]["client_secret"].stringValue
                 self.config["token_url"] = json["oauth"]["token_url"].stringValue
-                println(self.config)
+                 println(self.config)
                 
-                self.doOAuthProjectCampus()
+                
                 
         }
-        
-        
-        
-   
-        
+ 
     }
 
     override func didReceiveMemoryWarning() {
@@ -69,22 +63,17 @@ class ViewController: UIViewController {
             responseType:   "code"
         )
         
-        println("1")
-        println(oauthswift)
         
-        oauthswift.authorizeWithCallbackURL( NSURL(string: "oauth-swift://oauth-callback/projectcampus")!, scope: "full", state: "SALESFORCE",
-        success: {
+        oauthswift.authorizeWithCallbackURL( NSURL(string: "oauth-swift://oauth-callback/projectcampus")!, scope: "", state: "PROJECTCAMPUS", success: {
             credential, response in
-                println(response)
-                self.showAlertView("Salesforce", message: "oauth_token:\(credential.oauth_token)")
-            println("goed gegaan")
-            },
-        failure: {(error:NSError!) -> Void in
-            println("fout gegaan")
+            self.showAlertView("Projectcampus", message: "oauth_token:\(credential.oauth_token)")
+            println()
+            println(credential.oauth_token)
+            }, failure: {(error:NSError!) -> Void in
                 println(error.localizedDescription)
         })
         
-        println("2")
+
     }
     
     func showAlertView(title: String, message: String) {
@@ -92,6 +81,8 @@ class ViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
     }
+    
+    
     
     
 }

@@ -14,11 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
-        println(url)
-     
-        OAuth2Swift.handleOpenURL(url)
-     
+    // AppDelegate
+    func application(application: UIApplication!, openURL url: NSURL!, sourceApplication: String!, annotation: AnyObject!) -> Bool {
+        if (url.host == "oauth-callback") {
+            if ( url.path!.hasPrefix("/projectcampus" )){
+                OAuth2Swift.handleOpenURL(url)
+            }
+        }
         return true
     }
 
