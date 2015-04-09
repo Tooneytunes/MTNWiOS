@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		848434F51AD695DA00502C1D /* Mijn Vakken.png in Resources */ = {isa = PBXBuildFile; fileRef = 848434F01AD695DA00502C1D /* Mijn Vakken.png */; };
-		848434F71AD695DA00502C1D /* user168.png in Resources */ = {isa = PBXBuildFile; fileRef = 848434F21AD695DA00502C1D /* user168.png */; };
-		848434F91AD695DA00502C1D /* Mijn Werkplekken.png in Resources */ = {isa = PBXBuildFile; fileRef = 848434F41AD695DA00502C1D /* Mijn Werkplekken.png */; };
-		848434FB1AD6966300502C1D /* Projecten | Coach.png in Resources */ = {isa = PBXBuildFile; fileRef = 848434FA1AD6966300502C1D /* Projecten | Coach.png */; };
-		848434FD1AD6966800502C1D /* Projecten | Follow.png in Resources */ = {isa = PBXBuildFile; fileRef = 848434FC1AD6966800502C1D /* Projecten | Follow.png */; };
 		E2E172251997C0710010AC01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E172241997C0710010AC01 /* AppDelegate.swift */; };
 		E2E172271997C0710010AC01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E172261997C0710010AC01 /* ViewController.swift */; };
 		E2E1722A1997C0710010AC01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E172281997C0710010AC01 /* Main.storyboard */; };
@@ -30,11 +25,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		848434F01AD695DA00502C1D /* Mijn Vakken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Mijn Vakken.png"; path = "../../../../../../Downloads/MyIcons/png/Mijn Vakken.png"; sourceTree = "<group>"; };
-		848434F21AD695DA00502C1D /* user168.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user168.png; path = ../../../../../../Downloads/MyIcons/png/user168.png; sourceTree = "<group>"; };
-		848434F41AD695DA00502C1D /* Mijn Werkplekken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Mijn Werkplekken.png"; path = "../../../../../../Downloads/MyIcons/png/Mijn Werkplekken.png"; sourceTree = "<group>"; };
-		848434FA1AD6966300502C1D /* Projecten | Coach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Projecten | Coach.png"; path = "../../../../../../Downloads/MyIcons (1)/png/Projecten | Coach.png"; sourceTree = "<group>"; };
-		848434FC1AD6966800502C1D /* Projecten | Follow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Projecten | Follow.png"; path = "../../../../../../Downloads/MyIcons (1)/png/Projecten | Follow.png"; sourceTree = "<group>"; };
 		E2E1721F1997C0710010AC01 /* IOS8SwiftPrototypeCellsTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS8SwiftPrototypeCellsTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E172231997C0710010AC01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2E172241997C0710010AC01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,11 +78,6 @@
 				E2E172241997C0710010AC01 /* AppDelegate.swift */,
 				E2E172261997C0710010AC01 /* ViewController.swift */,
 				E2E172281997C0710010AC01 /* Main.storyboard */,
-				848434F01AD695DA00502C1D /* Mijn Vakken.png */,
-				848434F21AD695DA00502C1D /* user168.png */,
-				848434FA1AD6966300502C1D /* Projecten | Coach.png */,
-				848434FC1AD6966800502C1D /* Projecten | Follow.png */,
-				848434F41AD695DA00502C1D /* Mijn Werkplekken.png */,
 				E2E1722B1997C0710010AC01 /* Images.xcassets */,
 				E2E172221997C0710010AC01 /* Supporting Files */,
 			);
@@ -206,11 +191,6 @@
 			files = (
 				E2E1722A1997C0710010AC01 /* Main.storyboard in Resources */,
 				E2E1722C1997C0710010AC01 /* Images.xcassets in Resources */,
-				848434F71AD695DA00502C1D /* user168.png in Resources */,
-				848434F51AD695DA00502C1D /* Mijn Vakken.png in Resources */,
-				848434F91AD695DA00502C1D /* Mijn Werkplekken.png in Resources */,
-				848434FB1AD6966300502C1D /* Projecten | Coach.png in Resources */,
-				848434FD1AD6966800502C1D /* Projecten | Follow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
