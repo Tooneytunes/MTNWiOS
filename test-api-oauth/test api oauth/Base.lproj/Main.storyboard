@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -17,18 +17,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4F-ff-Vv8">
-                                <rect key="frame" x="277" y="122" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="238" y="122" width="124" height="30"/>
+                                <state key="normal" title="GET NEW TOKAN">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="startConnectionWithProjectcampus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jqR-Ip-adv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eib-lk-6BE">
+                                <rect key="frame" x="250" y="195" width="100" height="30"/>
+                                <state key="normal" title="Show Courses">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showCourses:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KB9-bQ-PRo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAp-Oh-rs9">
+                                <rect key="frame" x="237" y="233" width="127" height="30"/>
+                                <state key="normal" title="Show notifications">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showNotifications:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eC6-W6-pv4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Eib-lk-6BE" firstAttribute="leading" secondItem="k4F-ff-Vv8" secondAttribute="leading" constant="12" id="Cwz-UR-xGB"/>
                             <constraint firstItem="k4F-ff-Vv8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QSu-C7-eqd"/>
+                            <constraint firstItem="Eib-lk-6BE" firstAttribute="top" secondItem="k4F-ff-Vv8" secondAttribute="bottom" constant="43" id="ctm-it-OLj"/>
                             <constraint firstItem="k4F-ff-Vv8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="102" id="hUW-LU-h7H"/>
                         </constraints>
                     </view>
