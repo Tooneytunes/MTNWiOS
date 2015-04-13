@@ -14,6 +14,8 @@
 		5A3D1A861AC1BA5100048605 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A3D1A851AC1BA5100048605 /* Images.xcassets */; };
 		5A3D1A891AC1BA5100048605 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A3D1A871AC1BA5100048605 /* LaunchScreen.xib */; };
 		5A3D1A951AC1BA5100048605 /* test_api_oauthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3D1A941AC1BA5100048605 /* test_api_oauthTests.swift */; };
+		5A803C9D1AD678E2001503A6 /* ProjectcampusAuthorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A803C9C1AD678E2001503A6 /* ProjectcampusAuthorizer.swift */; };
+		5A803C9F1AD6911A001503A6 /* ProjectcampusAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A803C9E1AD6911A001503A6 /* ProjectcampusAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		5A3D1A8E1AC1BA5100048605 /* test api oauthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test api oauthTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A3D1A931AC1BA5100048605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A3D1A941AC1BA5100048605 /* test_api_oauthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_api_oauthTests.swift; sourceTree = "<group>"; };
+		5A803C9C1AD678E2001503A6 /* ProjectcampusAuthorizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectcampusAuthorizer.swift; sourceTree = "<group>"; };
+		5A803C9E1AD6911A001503A6 /* ProjectcampusAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectcampusAPI.swift; sourceTree = "<group>"; };
 		CA123A2DFE85EC7F790D1D28 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2144BF6136C6A4BA59BA7AE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +94,8 @@
 				5A3D1A851AC1BA5100048605 /* Images.xcassets */,
 				5A3D1A871AC1BA5100048605 /* LaunchScreen.xib */,
 				5A3D1A7C1AC1BA5100048605 /* Supporting Files */,
+				5A803C9C1AD678E2001503A6 /* ProjectcampusAuthorizer.swift */,
+				5A803C9E1AD6911A001503A6 /* ProjectcampusAPI.swift */,
 			);
 			path = "test api oauth";
 			sourceTree = "<group>";
@@ -288,7 +294,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A3D1A811AC1BA5100048605 /* ViewController.swift in Sources */,
+				5A803C9D1AD678E2001503A6 /* ProjectcampusAuthorizer.swift in Sources */,
 				5A3D1A7F1AC1BA5100048605 /* AppDelegate.swift in Sources */,
+				5A803C9F1AD6911A001503A6 /* ProjectcampusAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
