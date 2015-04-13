@@ -1,8 +1,8 @@
 //
-//  ViewController.swift
-//  costumTableViewController
+//  AppDelegate.swift
+//  CalculatorLogical
 //
-//  Created by Toon van Dort on 08/04/15.
+//  Created by Tom Hoevers on 02/03/15.
 //  Copyright (c) 2015 Toon van Dort. All rights reserved.
 //
 
