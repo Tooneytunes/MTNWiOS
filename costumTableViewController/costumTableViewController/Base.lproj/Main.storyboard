@@ -32,6 +32,12 @@
                                             <rect key="frame" x="228" y="7" width="46" height="30"/>
                                             <state key="normal" title="Button"/>
                                         </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zkx-Ox-EZ2">
+                                            <rect key="frame" x="22" y="13" width="198" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="r0j-TP-Ynd" firstAttribute="top" secondItem="bWD-yw-G9y" secondAttribute="topMargin" constant="-1" id="Tu7-he-K9u"/>
@@ -40,6 +46,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="button" destination="RQ5-hi-hmp" id="FaJ-Bm-mEh"/>
+                                    <outlet property="labelTitle" destination="Zkx-Ox-EZ2" id="7Rn-qJ-Yub"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -57,6 +64,7 @@
         <!--Table View Controller-->
         <scene sceneID="7Y4-nT-MTn">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8xI-WG-RCS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="DbS-lH-yeC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="151" sectionHeaderHeight="22" sectionFooterHeight="22" id="j17-2G-oer">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -77,7 +85,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="q7G-aC-gAc"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8xI-WG-RCS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="940" y="375"/>
         </scene>

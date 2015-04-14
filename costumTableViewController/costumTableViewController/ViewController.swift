@@ -28,13 +28,16 @@ class ViewController: UITableViewController {
         
             var cell = tableView.dequeueReusableCellWithIdentifier("customCell") as! customTableViewCell
 
-            cell.button.setTitle("5", forState: .Normal)
+            cell.button.setTitle("\(indexPath)", forState: .Normal)
+            cell.labelTitle.text = transportItems[indexPath.item]
             
             return cell
         }
     
+    //For the automatic resizing of the cells content
     func configureTableView() {
         tableView.rowHeight = UITableViewAutomaticDimension
+        //This value may needs adjusting
         tableView.estimatedRowHeight = 160.0
     }
 }
