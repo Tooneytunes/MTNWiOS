@@ -14,8 +14,6 @@ class ViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        // awesomeButton.setTitle(deadlineIcons, forState: .Normal)
     }
     
     override func didReceiveMemoryWarning() {
@@ -28,39 +26,17 @@ class ViewController: UITableViewController {
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var customCell = costumTableViewCell()
-        
-//      cell.deadlineBlue.setTitle(deadlineIcons, forState: .Normal)
-        println("\(customCell.initialise(tableView, transportItems: transportItems, indexPath: indexPath))")
-        
-        return customCell.initialise(tableView, transportItems: transportItems, indexPath: indexPath)
+            var cell = tableView.dequeueReusableCellWithIdentifier("customCell") as! customTableViewCell
+
+            cell.button.setTitle("5", forState: .Normal)
+            
+            return cell
+        }
+    
+    func configureTableView() {
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 160.0
     }
 }
-
-
-class costumTableViewCell: UITableViewCell {
-    
-    class customTableViewCellButton: UIButton {
-        
-    }
-    
-//    @IBOutlet var buttonLOL: UIButton!
-    var testButton = customTableViewCellButton()
-    
-    var deadlineIcons = "5"
-    
-    func initialise(tableView: UITableView, transportItems: [String], indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("transportCell") as UITableViewCell
-        cell.textLabel!.text = transportItems[indexPath.row]
-        var imageName = UIImage(named: transportItems[indexPath.row])
-        cell.imageView!.image = imageName
-        
-        println("\(transportItems[indexPath.row])")
-        println(testButton.currentTitle, "\(deadlineIcons)")
-
-        
-        return cell
-    }
- }
 
 

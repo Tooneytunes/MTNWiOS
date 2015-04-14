@@ -13,7 +13,7 @@
 		842405741AD54C4C00B8526A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842405731AD54C4C00B8526A /* Images.xcassets */; };
 		842405771AD54C4C00B8526A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842405751AD54C4C00B8526A /* LaunchScreen.xib */; };
 		842405831AD54C4C00B8526A /* costumTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842405821AD54C4C00B8526A /* costumTableViewControllerTests.swift */; };
-		849902671ADBE77B00F37B3F /* awesomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849902661ADBE77B00F37B3F /* awesomeCell.swift */; };
+		849902671ADBE77B00F37B3F /* customTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849902661ADBE77B00F37B3F /* customTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 		8424057C1AD54C4C00B8526A /* costumTableViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = costumTableViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		842405811AD54C4C00B8526A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		842405821AD54C4C00B8526A /* costumTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = costumTableViewControllerTests.swift; sourceTree = "<group>"; };
-		849902661ADBE77B00F37B3F /* awesomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = awesomeCell.swift; sourceTree = "<group>"; };
+		849902661ADBE77B00F37B3F /* customTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,7 @@
 				8424056C1AD54C4B00B8526A /* AppDelegate.swift */,
 				8424056E1AD54C4B00B8526A /* ViewController.swift */,
 				842405701AD54C4B00B8526A /* Main.storyboard */,
-				849902661ADBE77B00F37B3F /* awesomeCell.swift */,
+				849902661ADBE77B00F37B3F /* customTableViewCell.swift */,
 				842405731AD54C4C00B8526A /* Images.xcassets */,
 				842405751AD54C4C00B8526A /* LaunchScreen.xib */,
 				8424056A1AD54C4B00B8526A /* Supporting Files */,
@@ -217,7 +217,7 @@
 			files = (
 				8424056F1AD54C4B00B8526A /* ViewController.swift in Sources */,
 				8424056D1AD54C4B00B8526A /* AppDelegate.swift in Sources */,
-				849902671ADBE77B00F37B3F /* awesomeCell.swift in Sources */,
+				849902671ADBE77B00F37B3F /* customTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

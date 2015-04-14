@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
-class awesomeButton:UITableViewCell {
+class customTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var button: UIButton!
 }
