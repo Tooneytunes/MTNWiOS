@@ -10,8 +10,6 @@ import UIKit
 
 class ViewController: UITableViewController {
     
-    let notificatieGemist = "6"
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -30,9 +28,11 @@ class ViewController: UITableViewController {
     
     class MenuComponents {
         var title: String
+        var amountOfNotifications: Int
         
         init (Title: String) {
             title = Title
+            amountOfNotifications = Int()
         }
         
     }
@@ -64,8 +64,12 @@ class ViewController: UITableViewController {
     }
     
     
+    
+    
     //===========TABLEVIEW CODE============//
-    let menuItems = [MijnVakken(Title: "Mijn Vakken"), MijnWerkplekken(Title: "Mijn Werkplekken"), ProjectenFollow(Title: "Projecten | Follow"), ProjectenCoach(Title: "Projecten | Coach")]
+    var menuItems = [MijnVakken(Title: "Mijn Vakken"), MijnWerkplekken(Title: "Mijn Werkplekken"), ProjectenFollow(Title: "Projecten | Follow"), ProjectenCoach(Title: "Projecten | Coach")]
+    
+    var menuAmountOfNotes = [5, 9, 0, 10]
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return menuItems.count
@@ -76,14 +80,22 @@ class ViewController: UITableViewController {
     {
         var cell = tableView.dequeueReusableCellWithIdentifier("customCell") as! customTableViewCell
 
-        cell.berichtenOverzichtOutlet.text = "\(indexPath.item)"
-        
         if let cellTitle = menuItems[indexPath.item].title as String? {
             cell.labelTitle.text = cellTitle
         }
         else {
             println("\(menuItems[indexPath.item])")
         }
+        
+        if menuAmountOfNotes[indexPath.item] > 0 {
+            menuItems[indexPath.item].amountOfNotifications = menuAmountOfNotes[indexPath.item]
+        } else {
+            cell.berichtenOverzichtOutlet.hidden = true
+        }
+        
+//        menuItems[1].amountOfNotifications = menuAmountOfNotes[1]
+        
+        cell.berichtenOverzichtOutlet.text = "\(menuItems[indexPath.item].amountOfNotifications)"
         
         return cell
     }
