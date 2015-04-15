@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00C7270E1ADE50220089C195 /* ViewDetailCoursesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C7270D1ADE50220089C195 /* ViewDetailCoursesController.swift */; };
 		8424056D1AD54C4B00B8526A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424056C1AD54C4B00B8526A /* AppDelegate.swift */; };
 		8424056F1AD54C4B00B8526A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424056E1AD54C4B00B8526A /* ViewController.swift */; };
 		842405721AD54C4B00B8526A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842405701AD54C4B00B8526A /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00C7270D1ADE50220089C195 /* ViewDetailCoursesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDetailCoursesController.swift; sourceTree = "<group>"; };
 		842405671AD54C4B00B8526A /* costumTableViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = costumTableViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8424056B1AD54C4B00B8526A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8424056C1AD54C4B00B8526A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				842405731AD54C4C00B8526A /* Images.xcassets */,
 				842405751AD54C4C00B8526A /* LaunchScreen.xib */,
 				8424056A1AD54C4B00B8526A /* Supporting Files */,
+				00C7270D1ADE50220089C195 /* ViewDetailCoursesController.swift */,
 			);
 			path = costumTableViewController;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			files = (
 				8424056F1AD54C4B00B8526A /* ViewController.swift in Sources */,
 				8424056D1AD54C4B00B8526A /* AppDelegate.swift in Sources */,
+				00C7270E1ADE50220089C195 /* ViewDetailCoursesController.swift in Sources */,
 				849902671ADBE77B00F37B3F /* customTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

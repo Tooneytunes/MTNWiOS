@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Projectcampus-->
+        <!--Home-->
         <scene sceneID="RmI-pG-vSd">
             <objects>
                 <tableViewController id="846-SZ-Ud0" customClass="ViewController" customModule="costumTableViewController" customModuleProvider="target" sceneMemberID="viewController">
@@ -14,19 +14,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" rowHeight="48" id="NGI-eh-BWi" customClass="customTableViewCell" customModule="costumTableViewController" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="customCell" rowHeight="48" id="NGI-eh-BWi" customClass="customTableViewCell" customModule="costumTableViewController" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NGI-eh-BWi" id="bWD-yw-G9y">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0j-TP-Ynd">
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0j-TP-Ynd">
                                             <rect key="frame" x="282" y="7" width="30" height="30"/>
                                             <state key="normal" title="&gt;">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
-                                            <connections>
-                                                <segue destination="DbS-lH-yeC" kind="push" id="plW-eQ-Pca"/>
-                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQ5-hi-hmp">
                                             <rect key="frame" x="228" y="7" width="46" height="30"/>
@@ -47,6 +44,7 @@
                                 <connections>
                                     <outlet property="button" destination="RQ5-hi-hmp" id="FaJ-Bm-mEh"/>
                                     <outlet property="labelTitle" destination="Zkx-Ox-EZ2" id="7Rn-qJ-Yub"/>
+                                    <segue destination="DbS-lH-yeC" kind="push" id="6z5-Yv-glY"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -55,17 +53,17 @@
                             <outlet property="delegate" destination="846-SZ-Ud0" id="TKN-7p-qcx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Projectcampus" id="amU-Jq-INC"/>
+                    <navigationItem key="navigationItem" title="Home" id="amU-Jq-INC"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k5h-xQ-Sao" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="548" y="375"/>
         </scene>
-        <!--Table View Controller-->
+        <!--View Detail Course Controller-->
         <scene sceneID="7Y4-nT-MTn">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xI-WG-RCS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="DbS-lH-yeC" sceneMemberID="viewController">
+                <tableViewController id="DbS-lH-yeC" customClass="ViewDetailCourseController" customModule="costumTableViewController" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="151" sectionHeaderHeight="22" sectionFooterHeight="22" id="j17-2G-oer">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
