@@ -11,10 +11,12 @@ import UIKit
 
 class ViewDetailCourseController: UITableViewController {
     
-    var testString = String()
+    @IBOutlet weak var UINavItemOutlet: UINavigationItem!
+    
+    var testTitle = String()
     
     override func viewDidLoad() {
-        println(testString)
+        UINavItemOutlet.title = testTitle
     }
     
     

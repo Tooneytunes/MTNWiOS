@@ -22,19 +22,12 @@ class ViewController: UITableViewController {
     }
     
     
-    
-    func prepareForPopoverPresentation(popoverPresentationController: UIPopoverPresentationController) {
-        println("done")
-    }
-    
-    
     class MenuComponents {
         var title: String
         
         init (Title: String) {
             title = Title
         }
-        
     }
     
    
@@ -97,8 +90,15 @@ class ViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+        //CODE FOR WHEN AN TABLECELL HAS BEEN PRESSED
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let dvc = segue.destinationViewController as? ViewDetailCourseController {
+                dvc.testTitle = "Courses"
+            }
+        }
 }
+
 
 
