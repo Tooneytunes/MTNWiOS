@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UITableViewController {
     
+    let notificatieGemist = "6"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,13 +28,47 @@ class ViewController: UITableViewController {
     }
     
     
+    class MenuComponents {
+        var title: String
+        
+        init (Title: String) {
+            title = Title
+        }
+        
+    }
+    
+   
+    class MijnVakken: MenuComponents {
+        override init(Title: String) {
+            let title = Title
+            super.init(Title: title)
+        }
+    }
+    class MijnWerkplekken: MenuComponents {
+        override init(Title: String) {
+            let title = Title
+            super.init(Title: title)
+        }
+    }
+    class ProjectenFollow: MenuComponents {
+        override init(Title: String) {
+            let title = Title
+            super.init(Title: title)
+        }
+    }
+    class ProjectenCoach: MenuComponents {
+        override init(Title: String) {
+            let title = Title
+            super.init(Title: title)
+        }
+    }
     
     
     //===========TABLEVIEW CODE============//
-    let transportItems = ["Mijn Vakken", "Mijn Werkplekken", "Projecten | Follow","Projecten | Coach"]
+    let menuItems = [MijnVakken(Title: "Mijn Vakken"), MijnWerkplekken(Title: "Mijn Werkplekken"), ProjectenFollow(Title: "Projecten | Follow"), ProjectenCoach(Title: "Projecten | Coach")]
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return transportItems.count
+        return menuItems.count
     }
     
     
@@ -41,12 +76,17 @@ class ViewController: UITableViewController {
     {
         var cell = tableView.dequeueReusableCellWithIdentifier("customCell") as! customTableViewCell
 
-        cell.button.setTitle("\(indexPath.item)", forState: .Normal)
-        cell.labelTitle.text = transportItems[indexPath.item]
+        cell.berichtenOverzichtOutlet.text = "\(indexPath.item)"
+        
+        if let cellTitle = menuItems[indexPath.item].title as String? {
+            cell.labelTitle.text = cellTitle
+        }
+        else {
+            println("\(menuItems[indexPath.item])")
+        }
         
         return cell
     }
-    
     
     
     //For the automatic resizing of the cells content
@@ -59,23 +99,6 @@ class ViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
     }
-
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let courseDetailViewController = segue.destinationViewController as? ViewDetailCourseController {
-            
-            if let identifier = segue.identifier {
-                courseDetailViewController.testString = "bla"
-            }
-            else {
-                
-                println("Segue not succeeded")
-                
-            }
-        }
-    }
-
-
 }
 
 

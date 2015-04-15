@@ -85,10 +85,10 @@
 				8424056E1AD54C4B00B8526A /* ViewController.swift */,
 				842405701AD54C4B00B8526A /* Main.storyboard */,
 				849902661ADBE77B00F37B3F /* customTableViewCell.swift */,
+				00C7270D1ADE50220089C195 /* ViewDetailCoursesController.swift */,
 				842405731AD54C4C00B8526A /* Images.xcassets */,
 				842405751AD54C4C00B8526A /* LaunchScreen.xib */,
 				8424056A1AD54C4B00B8526A /* Supporting Files */,
-				00C7270D1ADE50220089C195 /* ViewDetailCoursesController.swift */,
 			);
 			path = costumTableViewController;
 			sourceTree = "<group>";
