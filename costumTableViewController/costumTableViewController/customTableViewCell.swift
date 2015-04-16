@@ -11,6 +11,14 @@ import UIKit
 
 class customTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var button: UIButton!
+    var _nummertjeString = String()
+    
+    @IBOutlet var berichtenOverzichtOutlet: UILabel!
     @IBOutlet weak var labelTitle: UILabel!
+    
+    func SetBerichtenOverzichtNumber (value: String) {
+        
+        _nummertjeString = value
+        
+    }
 }

@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UITableViewController {
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -21,19 +20,52 @@ class ViewController: UITableViewController {
     }
     
     
+    class MenuComponents {
+        var title: String
+        var amountOfNotifications: Int
+        
+        init (Title: String) {
+            title = Title
+            amountOfNotifications = Int()
+        }
+    }
     
-    func prepareForPopoverPresentation(popoverPresentationController: UIPopoverPresentationController) {
-        println("done")
+   
+    class MijnVakken: MenuComponents {
+        override init(Title: String) {
+            let title = Title
+            super.init(Title: title)
+        }
+    }
+    class MijnWerkplekken: MenuComponents {
+        override init(Title: String) {
+            let title = Title
+            super.init(Title: title)
+        }
+    }
+    class ProjectenFollow: MenuComponents {
+        override init(Title: String) {
+            let title = Title
+            super.init(Title: title)
+        }
+    }
+    class ProjectenCoach: MenuComponents {
+        override init(Title: String) {
+            let title = Title
+            super.init(Title: title)
+        }
     }
     
     
     
     
     //===========TABLEVIEW CODE============//
-    let transportItems = ["Mijn Vakken", "Mijn Werkplekken", "Projecten | Follow","Projecten | Coach"]
+    var menuItems = [MijnVakken(Title: "Mijn Vakken"), MijnWerkplekken(Title: "Mijn Werkplekken"), ProjectenFollow(Title: "Projecten | Follow"), ProjectenCoach(Title: "Projecten | Coach")]
+    
+    var menuAmountOfNotes = [5, 9, 0, 10]
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return transportItems.count
+        return menuItems.count
     }
     
     
@@ -41,12 +73,25 @@ class ViewController: UITableViewController {
     {
         var cell = tableView.dequeueReusableCellWithIdentifier("customCell") as! customTableViewCell
 
-        cell.button.setTitle("\(indexPath.item)", forState: .Normal)
-        cell.labelTitle.text = transportItems[indexPath.item]
+        if let cellTitle = menuItems[indexPath.item].title as String? {
+            cell.labelTitle.text = cellTitle
+        }
+        else {
+            println("\(menuItems[indexPath.item])")
+        }
+        
+        if menuAmountOfNotes[indexPath.item] > 0 {
+            menuItems[indexPath.item].amountOfNotifications = menuAmountOfNotes[indexPath.item]
+        } else {
+            cell.berichtenOverzichtOutlet.hidden = true
+        }
+        
+//        menuItems[1].amountOfNotifications = menuAmountOfNotes[1]
+        
+        cell.berichtenOverzichtOutlet.text = "\(menuItems[indexPath.item].amountOfNotifications)"
         
         return cell
     }
-    
     
     
     //For the automatic resizing of the cells content
@@ -57,25 +102,15 @@ class ViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+        //CODE FOR WHEN AN TABLECELL HAS BEEN PRESSED
     }
-
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let courseDetailViewController = segue.destinationViewController as? ViewDetailCourseController {
-            
-            if let identifier = segue.identifier {
-                courseDetailViewController.testString = "bla"
-            }
-            else {
-                
-                println("Segue not succeeded")
-                
+        if let dvc = segue.destinationViewController as? ViewDetailCourseController {
+                dvc.testTitle = "Courses"
             }
         }
-    }
-
-
 }
+
 
 
