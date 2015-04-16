@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>B756625B-A159-4338-8E10-A364C44689CC</string>
 	<key>IDESourceControlProjectName</key>
-	<string>IOS8SwiftPrototypeCellsTutorial</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>A2EE18FE0DB959A5820EA6A99651938E39ABA1E2</key>
 		<string>https://github.com/Tooneytunes/MTNWiOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Mutating Cells/IOS8SwiftPrototypeCellsTutorial.xcodeproj</string>
+	<string>Mutating Cells/IOS8SwiftPrototypeCellsTutorial.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>A2EE18FE0DB959A5820EA6A99651938E39ABA1E2</key>
