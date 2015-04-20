@@ -30,12 +30,29 @@ class ViewController: UITableViewController {
         }
     }
     
-   
-    class MijnVakken: MenuComponents {
-        override init(Title: String) {
-            let title = Title
-            super.init(Title: title)
+    enum MenuOptie {
+        
+        case Vak (title : String)
+        case Werkplek (title : String, locatie: String)
+        
+        func maakOptie () -> String {
+            switch self
+            {
+                case Vak(let title): return title
+                case .Werkplek(_, let loc): return loc
+                default: return "bla"
+            }
+
         }
+        
+    }
+    
+//  enum, generics, closures, Blocks
+    class MijnVakken: MenuComponents {
+//        override init(Title: String) {
+//            let title = Title
+//            super.init(Title: title)
+//        }
     }
     class MijnWerkplekken: MenuComponents {
         override init(Title: String) {
@@ -57,8 +74,6 @@ class ViewController: UITableViewController {
     }
     
     
-    
-    
     //===========TABLEVIEW CODE============//
     var menuItems = [MijnVakken(Title: "Mijn Vakken"), MijnWerkplekken(Title: "Mijn Werkplekken"), ProjectenFollow(Title: "Projecten | Follow"), ProjectenCoach(Title: "Projecten | Coach")]
     
@@ -71,8 +86,15 @@ class ViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
+        var image = UIImage(named: "Mijn Vakken")
+        var imageview = UIImageView(image: image)
+        
+        
+        
         var cell = tableView.dequeueReusableCellWithIdentifier("customCell") as! customTableViewCell
 
+        cell.imageViewOutlet = UIImageView(image: image)
+        
         if let cellTitle = menuItems[indexPath.item].title as String? {
             cell.labelTitle.text = cellTitle
         }

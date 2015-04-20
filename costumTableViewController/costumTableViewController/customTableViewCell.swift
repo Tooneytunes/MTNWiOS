@@ -15,6 +15,9 @@ class customTableViewCell: UITableViewCell {
     
     @IBOutlet var berichtenOverzichtOutlet: UILabel!
     @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet weak var imageViewOutlet: UIImageView!
+    
+    
     
     func SetBerichtenOverzichtNumber (value: String) {
         

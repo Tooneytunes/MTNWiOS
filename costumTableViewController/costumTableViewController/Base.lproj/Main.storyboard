@@ -43,6 +43,9 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a66-eF-fPR">
+                                            <rect key="frame" x="8" y="-2" width="54" height="52"/>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="r0j-TP-Ynd" firstAttribute="leading" secondItem="Zkx-Ox-EZ2" secondAttribute="trailing" constant="70" id="ElY-NO-8D6"/>
@@ -60,6 +63,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="berichtenOverzichtOutlet" destination="lmS-OI-wZo" id="hfG-iA-0cJ"/>
+                                    <outlet property="imageViewOutlet" destination="a66-eF-fPR" id="gdM-aj-caK"/>
                                     <outlet property="labelTitle" destination="Zkx-Ox-EZ2" id="7Rn-qJ-Yub"/>
                                     <segue destination="DbS-lH-yeC" kind="push" id="6z5-Yv-glY"/>
                                 </connections>
